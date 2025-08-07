@@ -1,0 +1,16 @@
+question
+
+<?php
+$capital=67;
+print("Variable capital is $capital");
+print("Variable CaPiTaL is $CaPiTaL");
+?>
+
+answer
+
+Variable capital is 67Variable CaPiTaL is 
+
+Explanation
+
+ PHP variables are case-sensitive. $capital is defined, but $CaPiTaL is not, so it prints nothing for the second variable.
+
