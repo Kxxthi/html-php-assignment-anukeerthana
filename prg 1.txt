@@ -3,3 +3,11 @@ $capital=67;
 print("Variable capital is $capital");
 print("Variable CaPiTaL is $CaPiTaL");
 ?>
+Explanation:
+
+$capital is defined, $CaPiTaL is not.
+
+PHP variable names are case-sensitive, so $CaPiTaL is different from $capital.
+
+Unset variables return an empty string (and throw a notice).
+
