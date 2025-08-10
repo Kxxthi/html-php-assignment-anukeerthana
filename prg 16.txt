@@ -1,0 +1,14 @@
+<?php
+function add($a, $b) {
+    return $a + $b;
+}
+
+if (isset($_POST['btn'])) {
+    echo "Sum: " . add($_POST['num1'], $_POST['num2']);
+}
+?>
+<form method="post">
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="submit" name="btn" value="Add">
+</form>

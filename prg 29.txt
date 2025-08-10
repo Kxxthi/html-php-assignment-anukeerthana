@@ -1,0 +1,37 @@
+1. rand()
+Purpose: Returns a random integer between two values (inclusive).
+Syntax: rand(min, max)
+Example:
+php
+echo rand(1, 10);
+
+2. abs()
+Purpose: Returns the absolute (non-negative) value of a number.
+Syntax: abs(number)
+Example:
+php
+echo abs(-5);
+echo abs(3.7);
+ 
+3. str_replace()
+(Looks like you meant strreplace(), but in PHP the correct function name is str_replace())
+Purpose: Replaces all occurrences of a substring with another string.
+Syntax: str_replace(search, replace, subject)
+Example:
+php
+echo str_replace("world", "PHP", "Hello world"); 
+
+4. pi()
+Purpose: Returns the value of π (pi).
+Syntax: pi()
+Example:
+php
+echo pi(); 
+
+5. ceil()
+Purpose: Rounds a number up to the nearest integer.
+Syntax: ceil(number)
+Example:
+php
+echo ceil(4.3);
+echo ceil(-4.3);

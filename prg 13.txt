@@ -1,0 +1,7 @@
+<?php
+$sub = substr(12345, 2, 2);
+echo "sub is $sub";
+?>
+12345 becomes string "12345".
+
+substr("12345", 2, 2) → start at index 2 (0-based), length 2 → "34".

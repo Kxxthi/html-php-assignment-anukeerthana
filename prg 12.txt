@@ -1,0 +1,7 @@
+<?php
+$marks = 72;
+if ($marks >= 75) echo "First Class";
+elseif ($marks >= 60) echo "Second Class";
+elseif ($marks >= 40) echo "Third Class";
+else echo "Fail";
+?>

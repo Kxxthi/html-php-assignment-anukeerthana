@@ -1,0 +1,7 @@
+<?php
+function minMax($arr) {
+    return ["min" => min($arr), "max" => max($arr)];
+}
+$result = minMax([3,5,7,1,9]);
+echo "Min: {$result['min']}<br>Max: {$result['max']}";
+?>

@@ -1,0 +1,13 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    echo "Thank you, $name. We have received your message. Confirmation sent to $email.";
+}
+?>
+<form method="post">
+    Name: <input type="text" name="name"><br>
+    Email: <input type="email" name="email"><br>
+    Message: <textarea name="message"></textarea><br>
+    <input type="submit" value="Send">
+</form>

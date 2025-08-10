@@ -1,0 +1,7 @@
+<?php
+$str = "Hello World";
+echo strlen($str);
+echo strtolower($str);
+echo strtoupper($str);
+echo strrev($str);
+?>

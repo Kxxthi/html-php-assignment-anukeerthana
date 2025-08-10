@@ -1,0 +1,17 @@
+<?php
+function deal() {
+    $costA = 25; $sizeA = 11;
+    $costB = 23; $sizeB = 9;
+
+    $price_per_litre_A = $costA / $sizeA;
+    $price_per_litre_B = $costB / $sizeB;
+
+    if ($price_per_litre_A < $price_per_litre_B) {
+        return "Choose Drink A";
+    } else {
+        return "Choose Drink B";
+    }
+}
+
+echo deal();
+?>

@@ -1,0 +1,6 @@
+<?php
+$var = "Hello";
+if (isset($var)) {
+    echo "Variable is set.";
+}
+?>

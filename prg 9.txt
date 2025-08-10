@@ -1,0 +1,12 @@
+<?php
+$this = "this"; 
+$that = "that"; 
+$the_other = 2.2000000000;
+print("$this,$not_set,$that+$the_other");
+?>
+Explanation:
+
+$not_set is undefined → empty string.
+
+$that+$the_other will not concatenate, it’s numeric addition:
+"that" → 0 when used as number.

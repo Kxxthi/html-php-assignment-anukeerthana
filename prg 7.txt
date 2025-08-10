@@ -1,0 +1,14 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = trim($_POST['name']);
+    if ($name == "") {
+        echo "Error: Name cannot be blank.";
+    } else {
+        echo "Hello, Welcome to $name!<br>Have a nice day!!";
+    }
+}
+?>
+<form method="post">
+    Name: <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>

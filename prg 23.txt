@@ -1,0 +1,24 @@
+<?php
+// Handle POST order
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    echo "Order placed for $name<br>";
+}
+?>
+<h2>Search Products (GET)</h2>
+<form method="get">
+    Category: <input type="text" name="category">
+    <input type="submit" value="Search">
+</form>
+
+<?php
+if (isset($_GET['category'])) {
+    echo "You searched for: " . htmlspecialchars($_GET['category']) . "<br>";
+}
+?>
+
+<h2>Place Order (POST)</h2>
+<form method="post">
+    Name: <input type="text" name="name">
+    <input type="submit" value="Order">
+</form>

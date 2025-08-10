@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Project list goes here...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header, footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    background: #555;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}

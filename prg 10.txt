@@ -1,0 +1,12 @@
+<?php
+$students = ["A" => 85, "B" => 65, "C" => 45, "D" => 35];
+
+foreach ($students as $name => $marks) {
+    if ($marks >= 75) $grade = "First Class";
+    elseif ($marks >= 60) $grade = "Second Class";
+    elseif ($marks >= 40) $grade = "Third Class";
+    else $grade = "Fail";
+
+    echo "$name: $grade<br>";
+}
+?>

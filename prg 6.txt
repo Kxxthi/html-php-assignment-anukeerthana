@@ -1,0 +1,59 @@
+<?php
+session_start();
+
+// Handle POST form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $age  = $_POST['age'];
+
+    // Store in session
+    $_SESSION['name'] = $name;
+    $_SESSION['age']  = $age;
+
+    // Set a cookie (expires in 1 hour)
+    setcookie("user_name", $name, time() + 3600);
+
+    // Redirect using GET parameters
+    header("Location: index.php?welcome=1");
+    exit;
+}
+?>
+<html>
+<head>
+    <title>PHP Data Passing Demo</title>
+</head>
+<body>
+
+<h2>PHP Data Passing Demo (GET, POST, SESSION, COOKIE)</h2>
+
+<!-- POST form -->
+<form method="post" action="">
+    Name: <input type="text" name="name" required><br><br>
+    Age: <input type="number" name="age" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<?php
+// Check GET parameter
+if (isset($_GET['welcome']) && $_GET['welcome'] == 1) {
+    echo "<h3>GET Method: You have just submitted the form!</h3>";
+}
+
+// Show session data
+if (isset($_SESSION['name']) && isset($_SESSION['age'])) {
+    echo "<h3>SESSION Data:</h3>";
+    echo "Name: " . $_SESSION['name'] . "<br>";
+    echo "Age: " . $_SESSION['age'] . "<br>";
+}
+
+// Show cookie data
+if (isset($_COOKIE['user_name'])) {
+    echo "<h3>COOKIE Data:</h3>";
+    echo "Hello again, " . $_COOKIE['user_name'] . "! (From your cookie)";
+}
+?>
+
+</body>
+</html>
